@@ -1,0 +1,16 @@
+[versions]
+picocli = "4.7.7"
+kotlin = "2.2.20"
+ktlint = "14.0.1"
+spotless = "6.25.0"
+
+[libraries]
+picocli = { module = "info.picocli:picocli", version.ref = "picocli" }
+picocli-codegen = { module = "info.picocli:picocli-codegen", version.ref = "picocli" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+
+[plugins]
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }

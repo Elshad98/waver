@@ -1,0 +1,20 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+insert_final_newline = false
+
+[*.{yml,yaml}]
+indent_size = 2
+
+[*.{kt,kts}]
+indent_size = 4
+max_line_length = 140
+ktlint_disabled_rules = final-newline
+ktlint_standard_if-else-bracing = enabled
+ktlint_standard_if-else-wrapping = enabled
+ktlint_standard_no-wildcard-imports = enabled
+ktlint_standard_function-expression-body = disabled
+ktlint_standard_multiline-expression-wrapping = disabled
+ktlint_standard_no-empty-first-line-in-class-body = disabled

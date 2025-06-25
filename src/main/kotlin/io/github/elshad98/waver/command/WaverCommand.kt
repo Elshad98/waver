@@ -10,6 +10,9 @@ import java.util.concurrent.Callable
 @Command(
     name = "waver",
     description = ["A CLI tool for analyzing and processing WAV files."],
+    subcommands = [
+        InfoCommand::class,
+    ],
     mixinStandardHelpOptions = true,
 )
 class WaverCommand : Callable<Int> {

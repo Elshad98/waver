@@ -9,7 +9,8 @@ import picocli.CommandLine
 import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
+    val arg = arrayOf("info", "silence.wav")
     val commandLine = CommandLine(WaverCommand())
-    val exitCode = commandLine.execute(*args)
+    val exitCode = commandLine.execute(*arg)
     exitProcess(exitCode)
 }
